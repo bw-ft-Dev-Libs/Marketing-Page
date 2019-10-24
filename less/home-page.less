@@ -1,140 +1,142 @@
-header{
-    text-align: center;
-    padding: 6%;
+.indexContainer{
 
-    h1{
-        font-size: 3rem;
-        .generalFont();
-        background-color: @div-bg;
-        width: 50%;
-        margin: 4% auto;
+    header{
+        text-align: center;
+        padding: 6%;
+
+        h1{
+            font-size: 3rem;
+            .generalFont();
+            background-color: @div-bg;
+            width: 50%;
+            margin: 4% auto;
+            padding: 2%;
+        }//end header h1
+
+        p{
+            font-size: 2rem;
+            .generalFont();
+        }//end header p
+
+    }//end header
+
+    .mainContent div{
         padding: 2%;
-    }//end header h1
+        text-align: center;
 
-    p{
-        font-size: 2rem;
-        .generalFont();
-    }//end header p
+        h3{
+            font-size: 1.8rem;
+        }//end section div h3
 
-}//end header
+        h6{
+            font-size: 1.5rem;
+        }//end section div h6
 
-.mainContent div{
-    padding: 2%;
-    text-align: center;
+        p{
+            font-size: 1.2rem;
+        }//end section div p
 
-    h3{
-        font-size: 1.8rem;
-    }//end section div h3
+    }//end section div
 
-    h6{
-        font-size: 1.5rem;
-    }//end section div h6
+    .boxTop{
+        background-color: #fac9b8;
+        background-image: url(../img/twitter.svg);
+        background-repeat: no-repeat;
+        background-size: 30%;
+        background-position: 95% 30%;
+        
+        @media @mobile{
+            background-size: 70%;
+            background-position: 130% 900%;
+        }
 
-    p{
-        font-size: 1.2rem;
-    }//end section div p
+        div{
+            width: 50%;
 
-}//end section div
+            @media @mobile{
+                display: flex;
+                width: 100%;
+                padding-bottom: 20%;
+            }
+        }//end div
 
-.boxTop{
-    background-color: #fac9b8;
-    background-image: url(../img/twitter.svg);
-    background-repeat: no-repeat;
-    background-size: 30%;
-    background-position: 95% 30%;
-    
-    @media @mobile{
-        background-size: 70%;
-        background-position: 130% 900%;
-    }
+    }//end .boxTop
 
-    div{
-        width: 50%;
+    .boxBottom{
+        background-color: #29ABA4;
 
         @media @mobile{
-            display: flex;
-            width: 100%;
-            padding-bottom: 20%;
+            padding: 10% 4%;
         }
-    }//end div
+    }//end .boxBottom
 
-}//end .boxTop
-
-.boxBottom{
-    background-color: #29ABA4;
-
-    @media @mobile{
-        padding: 10% 4%;
-    }
-}//end .boxBottom
-
-.cta{
-    text-align: center;
-    background-image: url("../img/form.svg");
-    background-repeat: no-repeat;
-
-    @media @mobile{
-        background-image: none;
-    }
-
-    h3{
-        font-size: 2.5rem;
+    .cta{
+        text-align: center;
+        background-image: url("../img/form.svg");
+        background-repeat: no-repeat;
 
         @media @mobile{
-            line-height: 50px;
+            background-image: none;
         }
-    }//end .cta h3
 
-    p{
-        font-size: 2rem;
-    }//end .cta p
+        h3{
+            font-size: 2.5rem;
 
-    div{
-        background-color: rgba(228, 228, 87, 0.726);
-        padding: 4% 0 4% 50%;
+            @media @mobile{
+                line-height: 50px;
+            }
+        }//end .cta h3
+
+        p{
+            font-size: 2rem;
+        }//end .cta p
+
+        div{
+            background-color: rgba(228, 228, 87, 0.726);
+            padding: 4% 0 4% 50%;
+
+            @media @mobile{
+                padding: 4% 4% 20% 4%;
+            }
+        }//end .cta div
+
+        span{
+            font-size: 1rem;
+            position: relative;
+            right: 55px;
+            top: 20px;
+        }//end .cta span
+
+        a{
+            background-color: @btn-bg;
+            .btnFont();
+            border: none;
+            padding: 2%;
+            border-radius: 10px;
+            text-decoration: none;
+
+            &:hover{
+                color: @text;
+            }
+        }//end .cta anchor
+
+    }//end .cta
+
+    .parallax1{
+        background-image: url("../img/flamethrower.png");
+        .parallax();
 
         @media @mobile{
-            padding: 4% 4% 20% 4%;
+            display: none;
         }
-    }//end .cta div
+    }//end parallax1
 
-    span{
-        display: block;
-        position: relative;
-        right: 7%;
-        top: -40px;
+    .parallax2{
+        background-image: url("../img/smoking-computer.png");
+        .parallax();
 
         @media @mobile{
-            right: -16%;
-            top: -98px;
+            display: none;
         }
-    }//end .cta span
-
-    a{
-        background-color: @btn-bg;
-        .btnFont();
-        border: none;
-        padding: 2%;
-        border-radius: 10px;
-        text-decoration: none;
-    }//end .cta anchor
-
-}//end .cta
-
-.parallax1{
-    background-image: url("../img/flamethrower.png");
-    .parallax();
-
-    @media @mobile{
-        display: none;
-    }
-}//end parallax1
-
-.parallax2{
-    background-image: url("../img/smoking-computer.png");
-    .parallax();
-
-    @media @mobile{
-        display: none;
-    }
-}//end parallax2
+    }//end parallax2
+}

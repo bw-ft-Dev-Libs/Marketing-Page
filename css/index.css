@@ -29,11 +29,15 @@ h6,
 p {
   font-size: 62.5%;
 }
+.aboutContainer {
+  text-align: center;
+}
 .aboutContainer p,
 .aboutContainer h1,
 .aboutContainer h2 {
   font-family: 'Montserrat', sans-serif;
   color: white;
+  font-size: 1.1rem;
 }
 .aboutContainer header {
   background-color: #29ABA4;
@@ -102,8 +106,6 @@ p {
   }
 }
 .aboutContainer section .dev_box .profile_images {
-  display: flex;
-  justify-content: center;
   margin-top: 20px;
 }
 .aboutContainer section .dev_box .profile_images img {
@@ -126,6 +128,8 @@ p {
 }
 .aboutContainer section .dev_box .tasks h2 {
   color: white;
+  margin-top: 20px;
+  width: 80%;
 }
 .aboutContainer section .dev_box .descriptions {
   margin: 20px;
@@ -156,7 +160,7 @@ p {
 .foundation_nav .navbar {
   box-sizing: border-box;
   height: 50px;
-  width: 25%;
+  width: 300px;
   margin: 20px;
   border-radius: 50px;
   display: flex;
@@ -194,11 +198,11 @@ p {
   background-color: #3A9AD9;
   color: black;
 }
-header {
+.indexContainer header {
   text-align: center;
   padding: 6%;
 }
-header h1 {
+.indexContainer header h1 {
   font-size: 3rem;
   font-family: "Libre Baskerville", serif;
   color: #354458;
@@ -207,25 +211,25 @@ header h1 {
   margin: 4% auto;
   padding: 2%;
 }
-header p {
+.indexContainer header p {
   font-size: 2rem;
   font-family: "Libre Baskerville", serif;
   color: #354458;
 }
-.mainContent div {
+.indexContainer .mainContent div {
   padding: 2%;
   text-align: center;
 }
-.mainContent div h3 {
+.indexContainer .mainContent div h3 {
   font-size: 1.8rem;
 }
-.mainContent div h6 {
+.indexContainer .mainContent div h6 {
   font-size: 1.5rem;
 }
-.mainContent div p {
+.indexContainer .mainContent div p {
   font-size: 1.2rem;
 }
-.boxTop {
+.indexContainer .boxTop {
   background-color: #fac9b8;
   background-image: url(../img/twitter.svg);
   background-repeat: no-repeat;
@@ -233,72 +237,66 @@ header p {
   background-position: 95% 30%;
 }
 @media (max-width: 500px) {
-  .boxTop {
+  .indexContainer .boxTop {
     background-size: 70%;
     background-position: 130% 900%;
   }
 }
-.boxTop div {
+.indexContainer .boxTop div {
   width: 50%;
 }
 @media (max-width: 500px) {
-  .boxTop div {
+  .indexContainer .boxTop div {
     display: flex;
     width: 100%;
     padding-bottom: 20%;
   }
 }
-.boxBottom {
+.indexContainer .boxBottom {
   background-color: #29ABA4;
 }
 @media (max-width: 500px) {
-  .boxBottom {
+  .indexContainer .boxBottom {
     padding: 10% 4%;
   }
 }
-.cta {
+.indexContainer .cta {
   text-align: center;
   background-image: url("../img/form.svg");
   background-repeat: no-repeat;
 }
 @media (max-width: 500px) {
-  .cta {
+  .indexContainer .cta {
     background-image: none;
   }
 }
-.cta h3 {
+.indexContainer .cta h3 {
   font-size: 2.5rem;
 }
 @media (max-width: 500px) {
-  .cta h3 {
+  .indexContainer .cta h3 {
     line-height: 50px;
   }
 }
-.cta p {
+.indexContainer .cta p {
   font-size: 2rem;
 }
-.cta div {
+.indexContainer .cta div {
   background-color: rgba(228, 228, 87, 0.726);
   padding: 4% 0 4% 50%;
 }
 @media (max-width: 500px) {
-  .cta div {
+  .indexContainer .cta div {
     padding: 4% 4% 20% 4%;
   }
 }
-.cta span {
-  display: block;
+.indexContainer .cta span {
+  font-size: 1rem;
   position: relative;
-  right: 7%;
-  top: -40px;
+  right: 55px;
+  top: 20px;
 }
-@media (max-width: 500px) {
-  .cta span {
-    right: -16%;
-    top: -98px;
-  }
-}
-.cta a {
+.indexContainer .cta a {
   background-color: #29ABA4;
   font-family: "Libre Baskerville", serif;
   color: #E0FFFF;
@@ -307,7 +305,10 @@ header p {
   border-radius: 10px;
   text-decoration: none;
 }
-.parallax1 {
+.indexContainer .cta a:hover {
+  color: #354458;
+}
+.indexContainer .parallax1 {
   background-image: url("../img/flamethrower.png");
   height: 500px;
   background-attachment: fixed;
@@ -316,11 +317,11 @@ header p {
   background-size: cover;
 }
 @media (max-width: 500px) {
-  .parallax1 {
+  .indexContainer .parallax1 {
     display: none;
   }
 }
-.parallax2 {
+.indexContainer .parallax2 {
   background-image: url("../img/smoking-computer.png");
   height: 500px;
   background-attachment: fixed;
@@ -329,7 +330,7 @@ header p {
   background-size: cover;
 }
 @media (max-width: 500px) {
-  .parallax2 {
+  .indexContainer .parallax2 {
     display: none;
   }
 }
