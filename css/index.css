@@ -13,6 +13,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.boxin {
+  box-sizing: border-box;
+}
 html {
   height: 100%;
   background-color: #C9EEFF;
@@ -25,6 +28,59 @@ h5,
 h6,
 p {
   font-size: 62.5%;
+}
+.foundation_nav {
+  box-sizing: border-box;
+  margin: 20px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 500px) {
+  .foundation_nav {
+    margin: 0;
+  }
+}
+.foundation_nav .navbar {
+  box-sizing: border-box;
+  height: 50px;
+  width: 25%;
+  margin: 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media (max-width: 500px) {
+  .foundation_nav .navbar {
+    width: 100%;
+  }
+}
+.foundation_nav .navbar .links {
+  background-color: #3A9AD9;
+  border-radius: 50px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+.foundation_nav .navbar .links a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  border-radius: 50px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.foundation_nav .navbar .links a:hover {
+  background-color: #3A9AD9;
+  color: black;
 }
 header {
   text-align: center;
@@ -165,27 +221,125 @@ section div p {
     display: none;
   }
 }
-.navbar {
-  background-color: #354458;
-  height: 100px;
+p,
+h1,
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+header {
+  background-color: #29ABA4;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 100vw;
-  margin: 0%;
+  margin: 30px 0px;
 }
-.links {
+header .main-heading {
+  margin: 20px 0px;
+  width: 100%;
+  background-color: #354458;
+  display: flex;
+  justify-content: center;
+}
+header .main-heading h1 {
+  margin: 20px 0px;
+  font-size: 70px;
+}
+header .mh-text {
+  margin: 20px 0px;
+  width: 100%;
+  background-color: #354458;
+  display: flex;
+  justify-content: center;
+}
+header .mh-text p {
+  margin: 20px;
+}
+section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  section {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+section .dev_box {
+  border: 5px solid #3A9AD9;
+  box-sizing: border-box;
+  height: 450px;
+  width: 300px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #29ABA4;
+}
+@media (max-width: 500px) {
+  section .dev_box {
+    width: 80%;
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #29ABA4;
+  }
+}
+section .dev_box .profile_images {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+section .dev_box .profile_images img {
+  width: 45%;
+  border-radius: 100%;
+  border: 10px solid #C9EEFF;
+}
+section .dev_box .tasks {
+  border-radius: 50px;
+  margin-top: 20px;
+  height: 10%;
+  width: 80%;
+  background-color: #354458;
   display: flex;
   justify-content: space-evenly;
-  width: 75%;
-  height: 25%;
+  align-items: center;
+}
+section .dev_box .tasks i {
+  color: white;
+}
+section .dev_box .tasks h2 {
+  color: white;
+}
+section .dev_box .descriptions {
+  margin: 20px;
+  background-color: #354458;
+}
+@media (max-width: 500px) {
+  section .dev_box .descriptions {
+    margin: 20px 0px;
+    background-color: #354458;
+  }
+}
+section .dev_box .descriptions p {
+  margin: 20px;
 }
 footer {
-  background-color: #3A9AD9;
-  padding: 20px 0;
-  border: 1px double #e0e0e0;
-  border-radius: 10px;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #354458;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
