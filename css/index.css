@@ -29,12 +29,124 @@ h6,
 p {
   font-size: 62.5%;
 }
+.aboutContainer p,
+.aboutContainer h1,
+.aboutContainer h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+.aboutContainer header {
+  background-color: #29ABA4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0px;
+}
+.aboutContainer header .main-heading {
+  margin: 20px 0px;
+  width: 100%;
+  background-color: #354458;
+  display: flex;
+  justify-content: center;
+}
+.aboutContainer header .main-heading h1 {
+  margin: 20px 0px;
+  font-size: 70px;
+}
+.aboutContainer header .mh-text {
+  margin: 20px 0px;
+  width: 100%;
+  background-color: #354458;
+  display: flex;
+  justify-content: center;
+}
+.aboutContainer header .mh-text p {
+  margin: 20px;
+}
+.aboutContainer section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .aboutContainer section {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.aboutContainer section .dev_box {
+  border: 5px solid #3A9AD9;
+  box-sizing: border-box;
+  height: 450px;
+  width: 300px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #29ABA4;
+}
+@media (max-width: 500px) {
+  .aboutContainer section .dev_box {
+    width: 80%;
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #29ABA4;
+  }
+}
+.aboutContainer section .dev_box .profile_images {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.aboutContainer section .dev_box .profile_images img {
+  width: 45%;
+  border-radius: 100%;
+  border: 10px solid #C9EEFF;
+}
+.aboutContainer section .dev_box .tasks {
+  border-radius: 50px;
+  margin-top: 20px;
+  height: 10%;
+  width: 80%;
+  background-color: #354458;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.aboutContainer section .dev_box .tasks i {
+  color: white;
+}
+.aboutContainer section .dev_box .tasks h2 {
+  color: white;
+}
+.aboutContainer section .dev_box .descriptions {
+  margin: 20px;
+  background-color: #354458;
+}
+@media (max-width: 500px) {
+  .aboutContainer section .dev_box .descriptions {
+    margin: 20px 0px;
+    background-color: #354458;
+  }
+}
+.aboutContainer section .dev_box .descriptions p {
+  margin: 20px;
+}
 .foundation_nav {
   box-sizing: border-box;
   margin: 20px 0px;
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  background-color: #29ABA4;
 }
 @media (max-width: 500px) {
   .foundation_nav {
@@ -100,17 +212,17 @@ header p {
   font-family: "Libre Baskerville", serif;
   color: #354458;
 }
-section div {
+.mainContent div {
   padding: 2%;
   text-align: center;
 }
-section div h3 {
+.mainContent div h3 {
   font-size: 1.8rem;
 }
-section div h6 {
+.mainContent div h6 {
   font-size: 1.5rem;
 }
-section div p {
+.mainContent div p {
   font-size: 1.2rem;
 }
 .boxTop {
@@ -221,124 +333,13 @@ section div p {
     display: none;
   }
 }
-p,
-h1,
-h2 {
-  font-family: 'Montserrat', sans-serif;
-  color: white;
-}
-header {
-  background-color: #29ABA4;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 30px 0px;
-}
-header .main-heading {
-  margin: 20px 0px;
-  width: 100%;
-  background-color: #354458;
-  display: flex;
-  justify-content: center;
-}
-header .main-heading h1 {
-  margin: 20px 0px;
-  font-size: 70px;
-}
-header .mh-text {
-  margin: 20px 0px;
-  width: 100%;
-  background-color: #354458;
-  display: flex;
-  justify-content: center;
-}
-header .mh-text p {
-  margin: 20px;
-}
-section {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-@media (max-width: 500px) {
-  section {
-    box-sizing: border-box;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-}
-section .dev_box {
-  border: 5px solid #3A9AD9;
-  box-sizing: border-box;
-  height: 450px;
-  width: 300px;
-  margin: 20px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #29ABA4;
-}
-@media (max-width: 500px) {
-  section .dev_box {
-    width: 80%;
-    margin: 20px 0px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #29ABA4;
-  }
-}
-section .dev_box .profile_images {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-section .dev_box .profile_images img {
-  width: 45%;
-  border-radius: 100%;
-  border: 10px solid #C9EEFF;
-}
-section .dev_box .tasks {
-  border-radius: 50px;
-  margin-top: 20px;
-  height: 10%;
-  width: 80%;
-  background-color: #354458;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-section .dev_box .tasks i {
-  color: white;
-}
-section .dev_box .tasks h2 {
-  color: white;
-}
-section .dev_box .descriptions {
-  margin: 20px;
-  background-color: #354458;
-}
-@media (max-width: 500px) {
-  section .dev_box .descriptions {
-    margin: 20px 0px;
-    background-color: #354458;
-  }
-}
-section .dev_box .descriptions p {
-  margin: 20px;
-}
 footer {
   left: 0;
   bottom: 0;
   height: 50px;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
-  background-color: #354458;
+  background-color: #3A9AD9;
   color: white;
   display: flex;
   justify-content: center;
